@@ -3,3 +3,11 @@
     height: 100vh;
     background-color: black
 }
+
+.box{
+    height: 100px;
+}
+
+.bg-grey{
+    background-color: lightgray;
+}
