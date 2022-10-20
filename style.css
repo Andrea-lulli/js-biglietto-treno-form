@@ -9,5 +9,9 @@
 }
 
 .bg-grey{
-    background-color: lightgray;
+    background-color: rgba(128,128,128,255);
+}
+
+.bg-purple{
+    background-color: rgba(185,20,80,255);
 }
