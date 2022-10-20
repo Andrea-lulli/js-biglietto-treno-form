@@ -9,26 +9,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="conteiner">
+
+        <div class="bg-danger p-2">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="bg-light p-5 d-flex align-items-center">
+
+                <form class="row gy-2 gx-3 align-items-center ">
+                    <div class="col-auto">
+                        <label for="inputEmail4" class="form-label">Nome e Cognome</label>      
+                      <input type="text" class="form-control"  placeholder="Nome" id="inputnome">
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputEmail4" class="form-label">Kmda percorrere</label> 
+                        <input type="text" class="form-control"  placeholder="Numero Km" id="inputKm">
+                      </div>
+                      <div class="col-auto">
+                        <label for="inputEmail4" class="form-label">Età</label> 
+                        <input type="text" class="form-control"  placeholder="Età" id="inputeta">
+                      </div>        
+                          
+                    <div class="col-6">
+                      <button onclick="recuperoDati(); return false" type="submit" class="btn btn-primary">Invia Dati</button>
+                    </div>
+                    <div class="col-6">
+                        <button  type="submit" class="btn btn-primary">Cancella</button>
+                      </div>
+                </form>
+             
+                
+                
+            
+                <h1 id="risultatonome"></h1>
+            
+                <h1 id="bgstandard"></h1>
+            
+                <h1 id="carrozza"></h1>
+            
+                <h1 id="codicecp"></h1>
+            
+                <h1 id="risultato"></h1>
+    
+            </div>
+
+        </div>
+
+        
+
+        
+
+
+
+    </div>
+    
     
 
-    <form action="">
-        <input type="text" id="inputnome">
-        <input type="text" id="inputKm">
-        <input type="text" id="inputeta">
-        <button onclick="recuperoDati(); return false">invia dati</button>
-    </form>
+
     
-    
-
-    <h1 id="risultatonome"></h1>
-
-    <h1 id="bgstandard"></h1>
-
-    <h1 id="carrozza"></h1>
-
-    <h1 id="codicecp"></h1>
-
-    <h1 id="risultato"></h1>
 
     
 
