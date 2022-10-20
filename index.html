@@ -10,70 +10,90 @@
 </head>
 <body>
 
+    
+    <!-- conteiner -->
     <div class="conteiner d-flex align-items-center justify-content-center">
-
+       
+        <!-- calcola il prezzo -->
         <div class="bg-purple p-2  ">
-            <h3 class="text-center text-light p-2">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
-            <div class="bg-light p-5 d-flex align-items-center  justify-content-between w-100 rounded">
 
+            <!-- titolo -->
+            <h3 class="text-center text-light p-2">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
+            
+            <!-- form inserimento dati -->
+            <div class="bg-light p-5 d-flex align-items-center  justify-content-between w-100 rounded">
                 <form class="row gy-2 gx-3 align-items-center ">
+                    
+                    <!-- nome e cognome -->
                     <div class="col-4 text-center">
                         <label for="inputEmail4" class="form-label">Nome e Cognome</label>      
-                      <input type="text" class="form-control"  placeholder="Nome" id="inputnome">
+                      <input type="text" class="form-control fw-bold"  placeholder="" id="inputnome">
                     </div>
+
+                    <!-- km -->
                     <div class="col-4 text-center">
-                        <label for="inputEmail4" class="form-label">Kmda percorrere</label> 
-                        <input type="text" class="form-control"  placeholder="Numero Km" id="inputKm">
+                        <label for="inputEmail4" class="form-label">Km da percorrere</label> 
+                        <input type="text" class="form-control fw-bold"  placeholder="" id="inputKm">
                       </div>
+
+                      <!--  eta -->
                       <div class="col-4 text-center">
                         <label for="inputEmail4" class="form-label">Età</label> 
-                        <input type="text" class="form-control"  placeholder="Età" id="inputeta">
+                        <input type="text" class="form-control fw-bold"  placeholder="" id="inputeta">
                       </div>        
-                          
+                    
+                      <!-- pulsanti -->
                     <div class="col-6 d-flex justify-content-end ">
-                      <button onclick="recuperoDati(); return false" type="submit" class="btn btn-primary">Invia Dati</button>
+                      <button onclick="recuperoDati(); return false" type="submit" class="btn btn-primary"><strong>Genera</strong> </button>
                     </div>
                     <div class="col-6">
-                        <button  type="submit" class="btn btn-primary">Cancella</button>
+                        <button  type="submit" class="btn btn-primary"><strong>Annulla</strong> </button>
                       </div>
                 </form>
             </div>
 
-
+            <!-- il tuo biglietto -->
             <div class="p-2">
                 <h3 class="text-center text-light mt-2">IL TUO BIGLIETTO</h3>
                 <div class="bg-light p-3 ">
+                    
+                    <!-- dettaglio passeggeri -->
                     <div class="col-12">
                         <h5>DETTAGLIO PASSEGGERI</h5>
                     </div>
+
+                    <!-- box offerta passeggero -->
                     <div class="box row text-cente border border-end-0">
                         <div class="col-3 border-end bg-grey pt-2 ">
                             <h6 class="fw-bold">NOME PASSEGGERO</h6>
                             <p class="fw-bold" id="risultatonome"></p>
                         </div>
+
+
                         <div class="col-3  pt-1">
                             <p><strong>Offerta</strong></p>
                             <p class="pt-4" id="bgstandard"></p>
                         </div>
+
+
                         <div class="col-2  pt-1">
                             <p><strong>Carrozza</strong></p>
                             <p class="pt-4" id="carrozza"></p>
                         </div>
+
+
                         <div class="col-2  pt-1">
                             <p><strong>Cocice CP</strong></p>
                             <p class="pt-4" id="codicecp"></p>
-
                         </div>
+
+
                         <div class="col-2  pt-1">
                             <p><strong>Costo Biglietto</strong></p>
                             <p class="pt-4" id="risultato"></p>
                         </div>
-                    </div>
-              
-                    
-        
+                    </div>       
                 </div>
-
         </div>
 
         
