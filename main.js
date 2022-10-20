@@ -1,4 +1,3 @@
-
 // Il programma dovrà chiedere all'utente il numero di 
 // chilometri
 //  che vuole percorrere e l'età del passeggero.
@@ -11,16 +10,20 @@
 // forma umana (con massimo due decimali, per indicare 
 // centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
+let inputNome = document.getElementById("inputnome");
 
 let inputKm = document.getElementById("inputKm");
 
 let inputEta = document.getElementById("inputeta");
+
 
 let prezzoFinale;
 
 
 
 function recuperoDati(){
+
+    let nome = inputnome.value;
 
     let km = parseInt(inputKm.value);
     
@@ -46,17 +49,15 @@ function recuperoDati(){
          prezzoFinale = prezzoBiglietto;
       } 
      
-    let prezzo = document.getElementById("text").innerHTML = `La tuo prezzo finale è: ${prezzoFinale} euro`;    
+      
+
+    let risultatoNome = document.getElementById("risultatonome").innerHTML = ` ${ nome } `;
+ 
+    let tipoBiglietto = document.getElementById("bgstandard").innerHTML = "Biglietto Standard";
+
+    let numeroCarrozza = document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10 ) + 1;
+
+    let codiceCp = document.getElementById("codicecp").innerHTML = Math.floor(Math.random() * 10000 );
+ 
+    let prezzo = document.getElementById("risultato").innerHTML = `${prezzoFinale}€`; 
 }
-
-
-
-    
-
-
-    
-
-
-
-
-    
