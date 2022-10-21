@@ -23,29 +23,33 @@ let prezzoFinale;
 
 function recuperoDati(){
 
-    let nome = inputnome.value;
+    let nome = inputNome.value;
 
-    let km = parseInt(inputKm.value);
+    let Km = parseInt(inputKm.value);
     
 
-    let eta = parseInt(inputeta.value);
+    let eta = parseInt(inputEta.value);
     
 
-    let prezzoBiglietto = km * "0.21";
+    let prezzoBiglietto = Km * "0.21";
+
+    
 
 
-    if ( eta <= 18 ){
-   
+    if ( eta == "2" ){
+        
+        console.log("va bene");
+
         prezzoFinale = (prezzoBiglietto - ( prezzoBiglietto * 0.2 )).toFixed(2);
          
          
-       } else if  ( eta >= 65) {
+       } else if  ( eta == "3" ) {
          
          prezzoFinale = (prezzoBiglietto - ( prezzoBiglietto * 0.4 )).toFixed(2);
      
      
       } else {
-     
+        
          prezzoFinale = prezzoBiglietto;
       } 
      
@@ -60,4 +64,5 @@ function recuperoDati(){
     let codiceCp = document.getElementById("codicecp").innerHTML = Math.floor(Math.random() * 10000 );
  
     let prezzo = document.getElementById("risultato").innerHTML = `${prezzoFinale}€`; 
-}
+    
+  }
