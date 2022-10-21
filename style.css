@@ -1,29 +1,33 @@
-.conteiner{
+/* conteiner generale */
+.conteiner {
     width: 100vw;
     height: 100vh;
     background-color: black
 }
 
-.box{
+/* box pulsanti  */
+.box {
     height: 100px;
 }
 
-.bg-grey{
-    background-color: rgba(128,128,128,255);
+.bg-grey {
+    background-color: rgba(128, 128, 128, 255);
 }
 
-.bg-purple{
-    background-color: rgba(185,20,80,255);
+.bg-purple {
+    background-color: rgba(185, 20, 80, 255);
 }
 
 
 
-.form-control, .form-select{
-    border: 1px solid rgba(185,20,80,255) ;
+.form-control,
+.form-select {
+    border: 1px solid rgba(185, 20, 80, 255);
 }
 
-.btn, .btn-primary{
-    background-color: rgba(204,204,204,255);
-    color: rgba(185,20,80,255) ;
-    border: 1px solid rgba(185,20,80,255)
+.btn,
+.btn-primary {
+    background-color: rgba(204, 204, 204, 255);
+    color: rgba(185, 20, 80, 255);
+    border: 1px solid rgba(185, 20, 80, 255)
 }

@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=s, initial-scale=1.0">
     <title>bigliettitreno</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    
+
     <!-- conteiner -->
     <div class="conteiner d-flex align-items-center justify-content-center">
-       
+
         <!-- calcola il prezzo -->
         <div class="bg-purple p-2  ">
 
             <!-- titolo -->
             <h3 class="text-center text-light p-2">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
-            
+
             <!-- form inserimento dati -->
             <div class="bg-light p-5 d-flex align-items-center  justify-content-between w-100 rounded">
                 <form class="row gy-2 gx-3 align-items-center ">
-                    
+
                     <!-- nome e cognome -->
                     <div class="col-4 text-center">
-                        <label for="inputEmail4" class="form-label">Nome e Cognome</label>      
-                      <input type="text" class="form-control fw-bold"  placeholder="" id="inputnome">
+                        <label for="inputEmail4" class="form-label">Nome e Cognome</label>
+                        <input type="text" class="form-control fw-bold" placeholder="" id="inputnome">
                     </div>
 
                     <!-- km -->
                     <div class="col-4 text-center">
-                        <label for="inputEmail4" class="form-label">Km da percorrere</label> 
-                        <input type="text" class="form-control fw-bold"  placeholder="" id="inputKm">
-                      </div>
+                        <label for="inputEmail4" class="form-label">Km da percorrere</label>
+                        <input type="text" class="form-control fw-bold" placeholder="" id="inputKm">
+                    </div>
 
-                      <!--  eta -->
-                      <div class="col-4 text-center">
-                        <label for="inputEmail4" class="form-label">Età</label> 
+                    <!--  eta -->
+                    <div class="col-4 text-center">
+                        <label for="inputEmail4" class="form-label">Età</label>
                         <select class="form-select fw-bold" id="inputeta">
                             <option selected></option>
-                            <option  value="1">Maggiorenne</option>
-                            <option  value="2">Minorenne</option>
-                            <option  value="3">Over 65</option>
+                            <option value="1">Maggiorenne</option>
+                            <option value="2">Minorenne</option>
+                            <option value="3">Over 65</option>
                         </select>
-                      </div>        
-                    
-                      <!-- pulsanti -->
+                    </div>
+
+                    <!-- pulsanti -->
                     <div class="col-6 d-flex justify-content-end ">
-                      <button onclick="recuperoDati(); return false" type="submit" class="btn btn-primary"><strong>Genera</strong> </button>
+                        <button onclick="recuperoDati(); return false" type="submit"
+                            class="btn btn-primary"><strong>Genera</strong> </button>
                     </div>
                     <div class="col-6">
-                        <button  type="submit" class="btn btn-primary"><strong>Annulla</strong> </button>
-                      </div>
+                        <button type="submit" class="btn btn-primary"><strong>Annulla</strong> </button>
+                    </div>
                 </form>
             </div>
 
@@ -61,7 +65,7 @@
             <div class="p-2">
                 <h3 class="text-center text-light mt-2">IL TUO BIGLIETTO</h3>
                 <div class="bg-light p-3 ">
-                    
+
                     <!-- dettaglio passeggeri -->
                     <div class="col-12">
                         <h5>DETTAGLIO PASSEGGERI</h5>
@@ -97,16 +101,15 @@
                             <p><strong>Costo Biglietto</strong></p>
                             <p class="pt-4" id="risultato"></p>
                         </div>
-                    </div>       
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
-    
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
- <script type="text/javascript" src="./main.js"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
-
-
-
-

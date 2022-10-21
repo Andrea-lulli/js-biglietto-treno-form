@@ -16,53 +16,51 @@ let inputKm = document.getElementById("inputKm");
 
 let inputEta = document.getElementById("inputeta");
 
-
 let prezzoFinale;
 
+// funzione recupero dati
+function recuperoDati() {
+
+  let nome = inputNome.value;
+
+  let Km = parseInt(inputKm.value);
 
 
-function recuperoDati(){
+  let eta = parseInt(inputEta.value);
 
-    let nome = inputNome.value;
+  // prezzo biglietto non sontato
+  let prezzoBiglietto = Km * "0.21";
 
-    let Km = parseInt(inputKm.value);
-    
-
-    let eta = parseInt(inputEta.value);
-    
-
-    let prezzoBiglietto = Km * "0.21";
-
-    
+  // funzione sconto in base all'eta utente
+  if (eta == "2") {
 
 
-    if ( eta == "2" ){
-        
-        console.log("va bene");
+    prezzoFinale = (prezzoBiglietto - (prezzoBiglietto * 0.2)).toFixed(2);
 
-        prezzoFinale = (prezzoBiglietto - ( prezzoBiglietto * 0.2 )).toFixed(2);
-         
-         
-       } else if  ( eta == "3" ) {
-         
-         prezzoFinale = (prezzoBiglietto - ( prezzoBiglietto * 0.4 )).toFixed(2);
-     
-     
-      } else {
-        
-         prezzoFinale = prezzoBiglietto;
-      } 
-     
-      
 
-    let risultatoNome = document.getElementById("risultatonome").innerHTML = ` ${ nome } `;
- 
-    let tipoBiglietto = document.getElementById("bgstandard").innerHTML = "Biglietto Standard";
+  } else if (eta == "3") {
 
-    let numeroCarrozza = document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10 ) + 1;
+    prezzoFinale = (prezzoBiglietto - (prezzoBiglietto * 0.4)).toFixed(2);
 
-    let codiceCp = document.getElementById("codicecp").innerHTML = Math.floor(Math.random() * 10000 );
- 
-    let prezzo = document.getElementById("risultato").innerHTML = `${prezzoFinale}€`; 
-    
+
+  } else {
+
+    prezzoFinale = prezzoBiglietto;
   }
+
+  // funzione nome e cognome utente
+  let risultatoNome = document.getElementById("risultatonome").innerHTML = ` ${nome} `;
+
+  // funzione tipo del biglietto
+  let tipoBiglietto = document.getElementById("bgstandard").innerHTML = "Biglietto Standard";
+
+  // funzione numero carrozza
+  let numeroCarrozza = document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
+
+  // funzione codice CD
+  let codiceCp = document.getElementById("codicecp").innerHTML = Math.floor(Math.random() * 10000);
+
+  // funzione prezzo finale
+  let prezzo = document.getElementById("risultato").innerHTML = `${prezzoFinale}€`;
+
+}
