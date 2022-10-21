@@ -62,5 +62,15 @@ function recuperoDati() {
 
   // funzione prezzo finale
   let prezzo = document.getElementById("risultato").innerHTML = `${prezzoFinale}€`;
+}
+
+function cancella() {
+
+  inputNome.value = " ";
+
+  inputKm.value = " ";
+
+
+  inputEta.value = " ";
 
 }
